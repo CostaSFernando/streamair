@@ -12,16 +12,10 @@ docker-compose.yml
 
 Não precisa de Node, build ou banco de dados. Abrir o `index.html` no navegador já funciona.
 
-## Antes de publicar: preencha os marcadores amarelos
+## Antes de publicar
 
-Procure por `todo` no `index.html`:
-
-- nota e link das avaliações no Google
-- lista completa das áreas atendidas
-- links do Facebook, Instagram e LinkedIn
-- ABN/ACN (o rodapé do site atual mostra números que não batem entre si)
-- formulário: hoje ele abre o e-mail do visitante já preenchido. Para receber direto,
-  use um serviço gratuito como Formspree ou Web3Forms e troque o `action` do `<form id="qform">`.
+- Formulário: hoje ele abre o e-mail do visitante já preenchido. Para receber direto,
+  use um serviço gratuito como Formspree ou Web3Forms e troque o `action` do `<form id="cform">`.
 
 ## Opção 1: GitHub Pages (grátis)
 
@@ -51,7 +45,5 @@ Atenção: o Portainer não é hospedagem gratuita por si só; ele precisa de um
 ## Antes de desligar o WordPress
 
 - Faça um backup completo do WordPress (arquivos + banco).
-- A página **Pay Now** (`/pay-now/`) é do WordPress: o link no rodapé aponta para ela.
-  Se o WordPress sair do ar, troque esse link pelo seu link de pagamento.
 - Os e-mails `@streamair.com.au` não dependem do site, mas confira onde o DNS de e-mail
   (registros MX) está antes de mexer no DNS.
