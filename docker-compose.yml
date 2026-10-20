@@ -1,0 +1,8 @@
+# Para o Portainer: Stacks > Add stack > cole este arquivo (ou aponte para o repositório Git)
+services:
+  streamair:
+    build: .
+    container_name: streamair-site
+    ports:
+      - "8080:80"
+    restart: unless-stopped
